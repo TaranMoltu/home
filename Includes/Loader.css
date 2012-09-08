@@ -1,0 +1,74 @@
+
+@keyframes whirl
+{
+	0%   {opacity: 1;}
+	75%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@-moz-keyframes whirl /* Firefox */
+{
+	0%   {opacity: 1;}
+	75%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@-webkit-keyframes whirl /* Safari and Chrome */
+{
+	0%   {opacity: 1;}
+	75%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+@-o-keyframes whirl /* Opera */
+{
+	0%   {opacity: 1;}
+	75%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+.Loader{
+	position: absolute;
+	top: 50%; left: 50%;
+	margin: -2em 0 0 -2em;
+	display: block;
+	width: 4em; height: 4em;
+}
+
+.Loader .L1, .Loader .L2, .Loader .L3, .Loader .L4, .Loader .L5, .Loader .L6, .Loader .L7, .Loader .L8{
+	position: absolute;
+	width: 0.5em; height: 0.5em;
+	
+	border-radius: 0.25em;
+	background-color: #333;
+	opacity: 0;
+	
+	animation-name: whirl;
+	animation-duration: 1.6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	/* Firefox: */
+	-moz-animation-name: whirl;
+	-moz-animation-duration: 1.6s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	/* Safari and Chrome: */
+	-webkit-animation-name: whirl;
+	-webkit-animation-duration: 1.6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	/* Opera: */
+	-o-animation-name: whirl;
+	-o-animation-duration: 1.6s;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: infinite;
+}
+
+.Loader .L1{top: 1em; left: 2em; animation-delay: 0s; -moz-animation-delay: 0s; -webkit-animation-delay: 0s;-o-animation-delay: 0s;}
+.Loader .L2{top: 1.29289em; left: 2.70711em; animation-delay: 0.2s; -moz-animation-delay: 0.2s; -webkit-animation-delay: 0.2s; -o-animation-delay: 0.2s;}
+.Loader .L3{top: 2em; left: 3em; animation-delay: 0.4s; -moz-animation-delay: 0.4s; -webkit-animation-delay: 0.4s;-o-animation-delay: 0.4s;}
+.Loader .L4{top: 2.70711em; left: 2.70711em;  animation-delay: 0.6s; -moz-animation-delay: 0.6s; -webkit-animation-delay: 0.6s;-o-animation-delay: 0.6s;}
+.Loader .L5{top: 3em; left: 2em;  animation-delay: 0.8s; -moz-animation-delay: 0.8s; -webkit-animation-delay: 0.8s;-o-animation-delay: 0.8s;}
+.Loader .L6{top: 2.70711em; left: 1.29289em;  animation-delay: 1s; -moz-animation-delay: 1s; -webkit-animation-delay: 1s;-o-animation-delay: 1s;}
+.Loader .L7{top: 2em; left: 1em;  animation-delay: 1.2s; -moz-animation-delay: 1.2s; -webkit-animation-delay: 1.2s;-o-animation-delay: 1.2s;}
+.Loader .L8{top: 1.29289em; left: 1.29289em;  animation-delay: 1.4s; -moz-animation-delay: 1.4s; -webkit-animation-delay: 1.4s;-o-animation-delay: 1.4s;}
